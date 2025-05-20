@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Receitas & Retalhos - Landing page PRO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="Index.css">
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -14,13 +17,41 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#secao1">Home</a></li>
-        <li><a href="#secao2">Receitas</a></li>
-        <li><a href="#secao3">Sobre nós</a></li>
-        <li><a href="#secao4">Contato</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#secao1">Home</a></li>
+                <li><a href="#secao2">Receitas</a></li>
+                <li><a href="#secao3">Sobre nós</a></li>
+                <li><a href="#secao4">Contato</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -30,95 +61,133 @@
     <h1>Bem-vindo à Receitas & Retalhos!</h1>
     <ul class="sec1">
       <p>Comidas de Inverno: Sabor que Aquece o Sul</p>
-      <li>Quando o frio chega, a cozinha se transforma no coração da casa. <br> No inverno, a comida ganha outro ritmo —
+      <li>Quando o frio chega, a cozinha se transforma no coração da casa. <br> No inverno, a comida ganha outro
+        ritmo —
         é
-        mais lenta, mais cheirosa, mais acolhedora. <br>No Sul, é tempo de resgatar receitas que aquecem de verdade:
-        caldos fumegantes, massas artesanais, <br>polenta cremosa, pinhão cozido e aquele entrevero que perfuma a casa
+        mais lenta, mais cheirosa, mais acolhedora. <br>No Sul, é tempo de resgatar receitas que aquecem de
+        verdade:
+        caldos fumegantes, massas artesanais, <br>polenta cremosa, pinhão cozido e aquele entrevero que perfuma
+        a casa
         inteira.
       </li>
-      <li>Tem gosto de lembrança, cheiro de lenha, panela no fogo e coberta no colo. <br>Cada prato carrega um pedacinho
-        da cultura, do campo, da serra, da tradição que passa de geração em geração. <br>Não é só pra matar a fome — é
+      <li>Tem gosto de lembrança, cheiro de lenha, panela no fogo e coberta no colo. <br>Cada prato carrega um
+        pedacinho
+        da cultura, do campo, da serra, da tradição que passa de geração em geração. <br>Não é só pra matar a
+        fome — é
         pra aquecer a alma.</li>
     </ul>
   </section>
 
   <section id="secao2">
-    <div class="receita">
-      <h2>Pamonha doce com queijo</h2>
-      <img src="imagem/img2.png" alt="Pamonha doce com queijo">
-      <h3>Ingredientes</h3>
-      <ul>
-        <li>6 espigas de milho verde</li>
-        <li>1 xícara de açúcar</li>
-        <li>1 pitada de sal</li>
-        <li>Queijo minas (meia cura ou fresco)</li>
-        <li>Palhas do milho para enrolar</li>
-      </ul>
-      <h3>Modo de preparo</h3>
-      <ol>
-        <li>Rale ou bata os grãos de milho no liquidificador.</li>
-        <li>Misture o açúcar e o sal.</li>
-        <li>Coloque um pouco da massa nas palhas e adicione o queijo.</li>
-        <li>Feche e cozinhe por cerca de 40 minutos.</li>
-      </ol>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="receita">
+            <h2>Pamonha doce com queijo</h2>
+            <img src="imagem/img2.png" alt="Pamonha doce com queijo">
+            <h3>Ingredientes</h3>
+            <ul>
+              <li>6 espigas de milho verde</li>
+              <li>1 xícara de açúcar</li>
+              <li>1 pitada de sal</li>
+              <li>Queijo minas (meia cura ou fresco)</li>
+              <li>Palhas do milho para enrolar</li>
+            </ul>
+            <h3>Modo de preparo</h3>
+            <ol>
+              <li>Rale ou bata os grãos de milho no liquidificador.</li>
+              <li>Misture o açúcar e o sal.</li>
+              <li>Coloque um pouco da massa nas palhas e adicione o queijo.</li>
+              <li>Feche e cozinhe por cerca de 40 minutos.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="receita">
+            <h2>Pierogi</h2>
+            <img src="imagem/img3.png" alt="Pierogi">
+            <h3>Ingredientes</h3>
+            <ul>
+              <li>2 xícaras de farinha de trigo</li>
+              <li>1 ovo</li>
+              <li>1/2 xícara de água</li>
+              <li>Recheio: batata, requeijão, cebola</li>
+            </ul>
+            <h3>Modo de preparo</h3>
+            <ol>
+              <li>Faça a massa com farinha, ovo e água.</li>
+              <li>Abra, corte círculos, recheie e feche em meia-lua.</li>
+              <li>Cozinhe em água fervente.</li>
+              <li>Sirva com cebola na manteiga.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="receita">
+            <h2>Vaca Atolada</h2>
+            <img src="imagem/img4.png" alt="Vaca Atolada">
+            <h3>Ingredientes</h3>
+            <ul>
+              <li>1 kg de costela bovina</li>
+              <li>500 g de mandioca</li>
+              <li>Alho, cebola, tomate, cheiro-verde</li>
+              <li>Sal, pimenta, cominho</li>
+            </ul>
+            <h3>Modo de preparo</h3>
+            <ol>
+              <li>Refogue a costela com alho e cebola.</li>
+              <li>Adicione os temperos e água.</li>
+              <li>Cozinhe até a carne ficar macia.</li>
+              <li>Junte a mandioca até desmanchar.</li>
+            </ol>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="receita">
+            <h2>Arroz doce com canela</h2>
+            <img src="imagem/img5.png" alt="Arroz doce com canela">
+            <h3>Ingredientes</h3>
+            <ul>
+              <li>1 xícara de arroz</li>
+              <li>1 litro de leite</li>
+              <li>1/2 xícara de açúcar</li>
+              <li>Canela em pau, cravo</li>
+            </ul>
+            <h3>Modo de preparo</h3>
+            <ol>
+              <li>Cozinhe o arroz em água até quase secar.</li>
+              <li>Adicione leite, açúcar, cravo e canela.</li>
+              <li>Cozinhe até engrossar e ficar cremoso.</li>
+              <li>Sirva morno ou gelado com canela.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <div class="receita">
-      <h2>Pierogi</h2>
-      <img src="imagem/img3.png" alt="Pierogi">
-      <h3>Ingredientes</h3>
-      <ul>
-        <li>2 xícaras de farinha de trigo</li>
-        <li>1 ovo</li>
-        <li>1/2 xícara de água</li>
-        <li>Recheio: batata, requeijão, cebola</li>
-      </ul>
-      <h3>Modo de preparo</h3>
-      <ol>
-        <li>Faça a massa com farinha, ovo e água.</li>
-        <li>Abra, corte círculos, recheie e feche em meia-lua.</li>
-        <li>Cozinhe em água fervente.</li>
-        <li>Sirva com cebola na manteiga.</li>
-      </ol>
-    </div>
-
-    <div class="receita">
-      <h2>Vaca Atolada</h2>
-      <img src="imagem/img4.png" alt="Vaca Atolada">
-      <h3>Ingredientes</h3>
-      <ul>
-        <li>1 kg de costela bovina</li>
-        <li>500 g de mandioca</li>
-        <li>Alho, cebola, tomate, cheiro-verde</li>
-        <li>Sal, pimenta, cominho</li>
-      </ul>
-      <h3>Modo de preparo</h3>
-      <ol>
-        <li>Refogue a costela com alho e cebola.</li>
-        <li>Adicione os temperos e água.</li>
-        <li>Cozinhe até a carne ficar macia.</li>
-        <li>Junte a mandioca até desmanchar.</li>
-      </ol>
-    </div>
-
-    <div class="receita">
-      <h2>Arroz doce com canela</h2>
-      <img src="imagem/img5.png" alt="Arroz doce com canela">
-      <h3>Ingredientes</h3>
-      <ul>
-        <li>1 xícara de arroz</li>
-        <li>1 litro de leite</li>
-        <li>1/2 xícara de açúcar</li>
-        <li>Canela em pau, cravo</li>
-      </ul>
-      <h3>Modo de preparo</h3>
-      <ol>
-        <li>Cozinhe o arroz em água até quase secar.</li>
-        <li>Adicione leite, açúcar, cravo e canela.</li>
-        <li>Cozinhe até engrossar e ficar cremoso.</li>
-        <li>Sirva morno ou gelado com canela.</li>
-      </ol>
-    </div>
   </section>
 
   <section id="secao3">
@@ -127,23 +196,28 @@
     <p class="sobreNos">
       <li>Este projeto nasceu com carinho e orgulho da nossa cultura.
         A ideia é simples, mas cheia de afeto: enaltecer a
-        culinária sulista, resgatando sabores que aquecem a alma e carregam histórias.Cada receita aqui representa um
-        pedaço do nosso Paraná e da tradição que passa de geração em geração. Queremos que, ao visitar este cantinho,
+        culinária sulista, resgatando sabores que aquecem a alma e carregam histórias.Cada receita aqui
+        representa um
+        pedaço do nosso Paraná e da tradição que passa de geração em geração. Queremos que, ao visitar este
+        cantinho,
         você sinta o aroma da comida feita com afeto e se conecte com as raízes da nossa terra.</li>
     </p>
     <h2>Nossa Inspiração</h2>
-    <p>Inspirado pelos aromas da cozinha da vó, criamos este espaço pra celebrar receitas que aquecem o coração e contam
+    <p>Inspirado pelos aromas da cozinha da vó, criamos este espaço pra celebrar receitas que aquecem o coração e
+      contam
       histórias da nossa terra.</p>
 
     <h2>Nossa Região</h2>
-    <p>O Paraná é um caldeirão de influências: indígena, europeia, tropeira. Cada prato tem um sotaque, uma lembrança e
+    <p>O Paraná é um caldeirão de influências: indígena, europeia, tropeira. Cada prato tem um sotaque, uma
+      lembrança e
       uma alma.</p>
 
     <h2>Nosso jeito de cozinhar</h2>
     <p>Aqui, o tempero principal é o carinho. Nada de pressa: é comida que exige tempo, paciência e afeto.</p>
 
     <h2>Valorização da cultura local</h2>
-    <p>Valorizamos os sabores da terra, os ingredientes colhidos por mãos que conhecem o tempo da natureza e a tradição
+    <p>Valorizamos os sabores da terra, os ingredientes colhidos por mãos que conhecem o tempo da natureza e a
+      tradição
       que vem do campo.</p>
 
     <h2>Nosso Convite</h2>
@@ -154,7 +228,8 @@
 
   <section id="secao4">
     <h1>Contato</h1>
-    <li>Ficou com vontade de compartilhar uma receita tradicional da sua família? <br>Tem uma sugestão ou só quer bater
+    <li>Ficou com vontade de compartilhar uma receita tradicional da sua família? <br>Tem uma sugestão ou só quer
+      bater
       um
       papo sobre comida boa? <br>Escreve pra gente! Vamos adorar ouvir você 🍲💛</li>
 
@@ -195,6 +270,10 @@
   <script>
     feather.replace();
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

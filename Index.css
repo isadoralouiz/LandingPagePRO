@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Unna', serif;
     font-size: 18px;
@@ -5,101 +6,168 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5c9a7;
-  }
-  
-  header {
+}
+
+header {
     background: #C84C05;
     color: #EFE5DA;
     padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; 
-  }
-  
-  nav ul {
+    right: 0;
+}
+
+nav ul {
     list-style: none;
     text-align: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin: 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #EFE5DA;
     text-decoration: none;
-  }
-  
-  section {
+}
+
+section {
     padding: 20px;
     margin: 10px 0;
-  }
-  
-  #secao1 {
+}
+
+#secao1 {
     background: #EAB38E;
-  }
-  
-  .img1 {
-    width: 1200px;
-    padding-left: 10%;
-  }
-  
-  .sec1 {
+}
+
+.img1 {
+    width: 1300px;
+    padding-left: 13%;
+}
+
+.sec1 {
     background-color: #e9a072;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
     border-radius: 20px;
     margin: 2%;
-  }
-  
-  
-  
-  
-  #secao2 {
+}
+
+
+
+
+#secao2 {
     background: #E7A87E;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding: 40px;
-  }
-  
-  .receita {
-    background-color: #d38551;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .receita:hover {
-    transform: scale(1.02);
-  }
-  
-  .receita img {
-    width: 250px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 3px;
+    margin: 0 3px;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+    opacity: 1;
+}
+
+.carousel-caption {
+    width: 70%;
+    color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.carousel {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 2rem;
+}
+
+.receita {
+    max-width: 600px;
+    width: 100%;
+}
+
+.receita img {
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 1rem auto;
     border-radius: 12px;
     margin-bottom: 10px;
-  }
-  
-  h2,
-  h3 {
+}
+
+.receita h2,
+.receita h3 {
+    text-align: center;
+}
+
+.receita ul,
+.receita ol {
+    padding-left: 1.2rem;
+}
+
+
+.receita:hover {
+    transform: scale(1.02);
+}
+
+h2,
+h3 {
     color: #5b321e;
     margin-bottom: 10px;
-  }
-  
-  ul,
-  ol {
+}
+
+ul,
+ol {
     margin-left: 20px;
-  }
-  
-  
-  
-  
-  #secao3 {
+}
+
+#secao3 {
     background: #DDA67B;
     background-color: #e9a072;
     margin-left: 100px;
@@ -107,45 +175,42 @@ body {
     margin-top: 100px;
     border-radius: 20px;
     margin: 2%;
-  
-  }
-  
-  
-  
-  #secao4 {
+
+}
+
+#secao4 {
     background: #E7A87E;
-    ;
-  }
-  
-  #secao4 h2 {
+}
+
+#secao4 h2 {
     color: #C84C05;
     margin-bottom: 10px;
     font-size: 28px;
-  }
-  
-  #secao4 {
+}
+
+#secao4 {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  form label {
+}
+
+form label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
     color: #8a5a3b;
-  }
-  
-  form input,
-  form textarea {
+}
+
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     border: 1px;
     border-radius: 10px;
     font-size: 14px;
     margin-top: 5px;
-  }
-  
-  form button {
+}
+
+form button {
     background-color: #C84C05;
     color: #ddcabe;
     padding: 12px 24px;
@@ -153,28 +218,28 @@ body {
     border-radius: 10px;
     font-size: 16px;
     margin-top: 20px;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background-color: #632b0d;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
     color: #8A6B5C;
     position: relative;
-  }
-  
-  .botao {
+}
+
+.botao {
     background-color: #9e501f;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 12px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #753b1a;
-  }
+}
