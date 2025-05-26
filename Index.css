@@ -81,6 +81,7 @@ section {
 
 #secao2 {
     background: #E7A87E;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -89,10 +90,11 @@ section {
 
 .carousel-item {
     display: flex;
+    flex-direction: column; /* importante */
     justify-content: center;
     align-items: center;
     padding: 2rem;
-  }
+  }  
   
   .carousel-item .receita {
     max-width: 600px;
