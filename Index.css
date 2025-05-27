@@ -17,6 +17,31 @@ header {
     right: 0;
 }
 
+.imagem-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img1 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.botao2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --bs-btn-padding-y: .25rem;
+  --bs-btn-padding-x: .5rem;
+  --bs-btn-font-size: .75rem;
+  background-color: #cf6427;
+    color: #eed6bc;
+   
+    border-radius: 12px;
+}
+ 
 .navbar-menu {
     list-style: none;
     text-align: center;
@@ -89,18 +114,21 @@ section {
 }
 
 .carousel-item {
-    display: flex;
-    flex-direction: column; /* importante */
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }  
-  
+  display: none;
+}
+
+.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
   .carousel-item .receita {
     max-width: 600px;
     width: 100%;
-    text-align: center; /* muda para left se preferir */
-    color: rgb(236, 182, 132); /* para combinar com o tema */
+    text-align: center;
+    color: rgb(44, 22, 1); 
   }
   
   .carousel-item img {
@@ -162,6 +190,7 @@ section {
   
   .carousel {
     transition: transform 0.6s ease-in-out;
+    position: relative;
   }
   
 
