@@ -37,9 +37,8 @@ header {
   --bs-btn-padding-x: .5rem;
   --bs-btn-font-size: .75rem;
   background-color: #cf6427;
-    color: #eed6bc;
-   
-    border-radius: 12px;
+  color: #eed6bc;
+  border-radius: 12px;
 }
  
 .navbar-menu {
@@ -103,7 +102,6 @@ section {
     margin: 2%;
 }
 
-
 #secao2 {
     background: #E7A87E;
 
@@ -115,110 +113,108 @@ section {
 
 .carousel-item {
   display: none;
-}
-
-.carousel-item.active {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-  .carousel-item .receita {
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-    color: rgb(44, 22, 1); 
-  }
-  
-  .carousel-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 2rem;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
-  .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
-  }
-  
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 15%;
-    opacity: 0.5;
-    transition: opacity 0.15s ease;
-  }
-  
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    opacity: 0.9;
-  }
-  
-  .carousel-indicators [data-bs-target] {
-    width: 30px;
-    height: 3px;
-    margin: 0 3px;
-    opacity: 0.5;
-    transition: opacity 0.6s ease;
-  }
-  
-  .carousel-indicators .active {
-    background-color: rgb(236, 182, 132);
-    opacity: 1;
-  }
-  
-  .carousel-caption {
-    width: 70%;
-    color: rgb(236, 182, 132);
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-  
-  .carousel {
-    transition: transform 0.6s ease-in-out;
-    position: relative;
-  }
-  
-
-
-.receita {
-    max-width: 600px;
-    width: 100%;
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.receita img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 12px;
-    margin-bottom: 10px;
+.carousel-item .card.receita {
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  color: rgb(44, 22, 1);
+  background-color: #f5c9a7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  font-family: 'Unna', serif;
 }
 
-.receita h2,
-.receita h3 {
-    text-align: center;
+.carousel-item .card.receita img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.receita ul,
-.receita ol {
-    padding-left: 1.2rem;
+.carousel-item .card-body {
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
+.carousel-item .card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #5b321e;
+}
+
+.carousel-item .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  filter: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  margin: 0 3px;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .active {
+  background-color: rgb(236, 182, 132);
+  opacity: 1;
+}
+
+.carousel-caption {
+  width: 70%;
+  color: rgb(236, 182, 132);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.carousel {
+  transition: transform 0.6s ease-in-out;
+  position: relative;
+}
 
 .receita:hover {
     transform: scale(1.02);
